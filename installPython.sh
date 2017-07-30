@@ -7,5 +7,7 @@ wget https://www.python.org/ftp/python/$1/Python-$1.tar.xz
 tar xJf Python-$1.tar.xz
 cd Python-$1
 ./configure --prefix=/usr/local
-sudo make -y install
+sudo ./configure -y
+sudo make
+sudo make install
 python3 --version
